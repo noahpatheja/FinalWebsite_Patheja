@@ -1,0 +1,59 @@
+/** Positions logo at top left of page**/
+header img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/** Sets position of entire header to be relative to the rest of the page**/
+header {
+    position: relative;
+}
+
+/** Changes background color of the nav bar to red and lowers the position by 50px while increasing the font size for ease of access**/
+nav {
+    background-color: red;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+/** Makes the nav bar horizontal for ease of access**/
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/** Makes the nav items bold and white for easier reading**/
+ul a {
+    display: inline-block;
+    font: bold;
+    color: white;
+}
+
+/** sets the div1 class to flex so the text is to the right of the image on the results page**/
+.div1 {
+    display: flex;
+    gap: 10px;
+}
+
+/** sets the div2 class to flex the text to the left of the video on the results page**/
+.div2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1 0;
+    gap: 10px;
+}
+
+/** Changes font of the page title and moves it 150px to the right so it's out of the way of the logo**/
+h1 {
+    font-family: Verdana;
+    margin-left: 150px;
+}
+
+
+/** Makes the logo stay at the top left of the page**/
+h1 a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
