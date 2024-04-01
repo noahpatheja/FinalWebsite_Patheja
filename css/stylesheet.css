@@ -15,12 +15,16 @@ nav {
     background-color: red;
     margin-top: 50px;
     font-size: 30px;
+    text-decoration: none;
+    padding: 0.01px;
+    border-radius: 15px;
 }
 
 /** Makes the nav bar horizontal for ease of access**/
 li {
     display: inline-block;
     list-style-type: none;
+    margin: 20px;
 }
 
 /** Makes the nav items bold and white for easier reading**/
@@ -28,6 +32,13 @@ ul a {
     display: inline-block;
     font: bold;
     color: white;
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 /** sets the div1 class to flex so the text is to the right of the image on the results page**/
@@ -40,8 +51,11 @@ ul a {
 .div2 {
     display: flex;
     flex-direction: row-reverse;
-    flex: 1 0;
     gap: 10px;
+}
+
+.div2 iframe {
+    float: left;
 }
 
 /** Changes font of the page title and moves it 150px to the right so it's out of the way of the logo**/
@@ -56,4 +70,45 @@ h1 a {
     position: absolute;
     top: 0px;
     left: 0px;
+}
+
+p {
+    border: 15px solid red;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+nav li {
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    color: red;
+    padding: 20px;
+}
+
+#contact p {
+    border: none;
+}
+
+#contact #p1 {
+    border: 15px solid red;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+main img {
+    object-fit: contain;
+}
+
+header {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+html {
+    background-color: lightgray;
 }
