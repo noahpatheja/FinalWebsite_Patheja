@@ -62,8 +62,46 @@
             <p>
 
             </p>
-            <input type="submit" value="Submit">
+            <button type="submit">Submit</button>
         </form>
+        <script>
+            document.getElementById("suggestion-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                
+                var name = document.getElementById("name").value.trim();
+                var email = document.getElementById("email").value.trim();
+                var suggestion = document.getElementById("suggestion").value.trim();
+
+                
+                if (name === "") {
+                    alert("Please enter your name.");
+                    return;
+                }
+
+                if (email === "") {
+                    alert("Please enter your email address.");
+                    return;
+                } else if (!isValidEmail(email)) {
+                    alert("Please enter a valid email address.");
+                    return;
+                }
+
+                if (suggestion === "") {
+                    alert("Please enter your suggestion.");
+                    return;
+                }
+
+                
+                this.submit();
+            });
+
+
+        function isValidEmail(email) {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+            }
+        </script>
     </main>
     <footer>
         &copy; Copyright of Formula 1
